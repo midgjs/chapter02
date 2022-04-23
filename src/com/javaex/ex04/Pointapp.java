@@ -4,19 +4,33 @@ public class Pointapp {
 
 	public static void main(String[] args) {
 		
-		Point point1 = new Point();
-		point1.setXgraph(5);
-		point1.setYgraph(5);
+		Point p1 = new Point();
+		p1.setX(5);
+		p1.setY(5);
 		
-		point1.draw();
+		Point p2 = new Point();
+		p2.setX(10);
+		p2.setY(23);
 		
 		
-		Point point2 = new Point();
-		point2.setXgraph(10);
-		point2.setYgraph(23);
+		Point p3 = new Point(10, 20);
 		
-		point2.draw();
+		Point p4 = new Point(100);//x값
+		p4.setY(200);
 		
+		//y값을 먼저 넣고
+		//setter x값을 넣는다
+		Point p5 = new Point(200); //y값
+
+		
+		p1.draw();
+		p2.draw();
+		p3.draw();
+		
+		p1.draw(true);  //그리기
+		p1.draw(false); //지우기
+		
+		p4.draw();
 	}
 
 }

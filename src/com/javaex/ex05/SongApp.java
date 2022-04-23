@@ -4,34 +4,21 @@ public class SongApp {
 
 	public static void main(String[] args) {
 		
-		Song goodday = new Song();
-		goodday.setTitle("좋은날");
-		goodday.setArtist("아이유");
-		goodday.setAlbum("Real");
-		goodday.setComposer("이민수");
-		goodday.setYear(2010);
-		goodday.setTrack(3);
+		Song s01 = new Song();
+		s01.setTitle("좋은날");
+		s01.setArtist("아이유");
+		s01.setAlbum("Real");
+		s01.setComposer("이민수");
+		s01.setYear(2010);
+		s01.setTrack(3);
+		System.out.println(s01.toString());
 		
-		Song lie = new Song();
-		lie.setTitle("거짓말");
-		lie.setArtist("BIGBANG");
-		lie.setAlbum("Always");
-		lie.setComposer("G-DRAGON");
-		lie.setYear(2007);
-		lie.setTrack(2);
 		
-		Song cherryblossomending = new Song();
-		cherryblossomending.setTitle("벚꽃엔딩");
-		cherryblossomending.setArtist("버스커버스커");
-		cherryblossomending.setAlbum("버스커버스커1집");
-		cherryblossomending.setComposer("장범준");
-		cherryblossomending.setYear(2012);
-		cherryblossomending.setTrack(4);
+		Song s02 = new Song("거짓말", "BIGBANG", "Always", "G-DRAGON", -2007);
+		System.out.println(s02.toString());
 		
-		goodday.showInfo();
-		lie.showInfo();
-		cherryblossomending.showInfo();
+		Song s03 = new Song("벚꽃엔딩", "버스커버스커", "버스커버스커1집", "G-DRAGON", 2012, 4);
+		System.out.println(s03.toString());	
+		
 	}
-
 }
-//단축해서 쓰는방법

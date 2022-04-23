@@ -8,12 +8,16 @@ public class Goods {
 	
 	//생성자
 	
-	//메소드 - gs
-	public void setName(String n) {
-		name=n;
+	//메소드 - gs (단축키 alt + shift + s -> r)
+	public void setName(String name) {
+		this.name = name;
 	}
-	public void setPrice(int p) {
-		price = p;
+	public void setPrice(int price) {
+		if(price<0) {
+			this.price=0;
+		} else {
+			this.price = price;
+		}
 	}
 	
 	public String getName() {
@@ -33,3 +37,5 @@ public class Goods {
 	}
 	
 }
+//return 값에는 this. 생략가능(헷갈리지 않음)
+//name=name;이 되면 헷갈리기 때문에 this 표시
