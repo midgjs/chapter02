@@ -1,6 +1,6 @@
 package com.javaex.ex14;
 
-public class PointApp {
+public class ShapeApp {
 
 	public static void main(String[] args) {
 		

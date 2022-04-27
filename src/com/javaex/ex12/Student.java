@@ -7,7 +7,7 @@ public class Student extends Person{
 	
 	//생성자
 	public Student() {
-		super(); // 꼭 있어야 하는지?
+		super(); 
 		System.out.println("Student()");
 	}
 	
@@ -32,14 +32,16 @@ public class Student extends Person{
 		this.schoolName = schoolName;
 	}
 	
+	//메소드 일반
 	public void showInfo() {
-		super.showInfo(); // super -- 부모 메소드
+		//부모 toString() 그대로 사용하고 싶을 때 super
+		System.out.println(super.toString());
 		System.out.println("학교:" + this.schoolName);
 	}
 		
 	@Override
 	public String toString() {
-		return "Student [schoolName=" + name + ", getName()=" + super.getName() + ", getAge()=" + getAge() + "]";
+		return "Student [schoolName=" + schoolName + ", getName()=" + name + ", getAge()=" + age + "]";
 	}
 
 	
